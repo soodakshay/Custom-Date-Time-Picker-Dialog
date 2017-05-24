@@ -1,9 +1,10 @@
 A Material design back port of Android's CalendarView. The goal is to have a Material look and feel, rather than 100% parity with the platform's implementation.
 
 Usage: 
- DatePickerDialog datePickerDialog = DatePickerDialog.newInstance(new DatePickerDialog.OnDateSetListener() {
-      @Override public void onDateSet(DatePickerDialog view, int year, int monthOfYear,
-                                      int dayOfMonth) {
+
+```DatePickerDialog datePickerDialog = DatePickerDialog.newInstance(new DatePickerDialog.OnDateSetListener() {
+ @Override 
+      public void onDateSet(DatePickerDialog view, int year, int monthOfYear,int dayOfMonth) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, monthOfYear, dayOfMonth);
 
@@ -27,3 +28,4 @@ Usage:
     mCal.set(Calendar.YEAR, year);
     return mCal;
   }
+  ```
